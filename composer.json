@@ -1,0 +1,16 @@
+{
+    "name": "ppoza/laravel-core",
+    "description": "KTC laravel core",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pablo Poza",
+            "email": "pablo@kleetec.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"KTC\\LaravelCore\\": "src/"}
+    }
+}
