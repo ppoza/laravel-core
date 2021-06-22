@@ -1,6 +1,6 @@
 <?php
 
-namespace KTC\LaravelCore;
+namespace Kleetec\LaravelCore;
 
 use Illuminate\Support\Facades\Response;
 
