@@ -2,6 +2,6 @@
 
 namespace KTC\LaravelCore;
 
-class LaravelCore {
+class BaseRepository{
     
 }
