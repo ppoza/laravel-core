@@ -4,7 +4,7 @@ namespace Kleetec\LaravelCore;
 
 use Illuminate\Support\Facades\Response;
 
-class ServiceResponse {
+class KTCRepositoryResponse {
     
     public $success;
     public $code;
@@ -27,19 +27,19 @@ class ServiceResponse {
     }
 
 
-    public static function notFound($id)
+    public static function notFound($id, $message = null)
     {
-      return new ServiceResponse(false, 404, 'Model id '.$id.' not found', null);
+      return new KTCRepositoryResponse(false, 404, $message == null ? 'Model id '.$id.' not found' : $message, null);
     }
 
     public static function success($data, $message = 'ok')
     {
-      return new ServiceResponse(true, 1, $message, $data);
+      return new KTCRepositoryResponse(true, 1, $message, $data);
     }
   
     public static function error($message)
     {
-      return new ServiceResponse(false, 0, $message, null);
+      return new KTCRepositoryResponse(false, 0, $message, null);
     }
 
 }

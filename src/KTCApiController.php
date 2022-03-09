@@ -2,9 +2,7 @@
 
 namespace Kleetec\LaravelCore;
 
-use Illuminate\Routing\Controller as BaseController;
-
-class KTCApiController extends BaseController {
+class KTCApiController extends KTCBaseController {
     
     function errorResponse($code, $message, $data = null) {
         return response()->json([
@@ -47,7 +45,7 @@ class KTCApiController extends BaseController {
     }
 
 
-    function apiResponse(ServiceResponse $serviceResponse) {
+    function apiResponse(KTCServiceResponse $serviceResponse) {
         return response()->json([
             'code' => $serviceResponse->code,
             'success' => $serviceResponse->success,

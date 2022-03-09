@@ -2,6 +2,6 @@
 
 namespace Kleetec\LaravelCore;
 
-class BaseRepository{
+class KTCBaseRepository {
     
 }
