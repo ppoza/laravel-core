@@ -3,7 +3,7 @@
 namespace Kleetec\LaravelCore;
 
 
-class BaseService  {
+class KTCBaseService  {
 
     function toResponse(KTCRepositoryResponse $repositoryResponse) {
         return new KTCServiceResponse($repositoryResponse->success, 
